@@ -1,0 +1,54 @@
+    body{
+        background-color: #dbdada;
+        
+    }
+    .photo img{
+        box-sizing: border-box;
+        width: 200px;
+        max-height: 200px;
+        margin: 5px;
+        padding: 1px;
+        color: #333333;
+        background-image: cover;
+        border-radius: 10px;
+        
+    }
+    nav {
+        margin: 10px;
+        word-spacing: 50px;
+        text-align: center;
+    }
+    #about {
+        
+        max-width: 2100px;
+        margin: 20px;
+        border: 1px beige;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: #333;
+    }
+    #schooling {
+        max-width: 2100px;
+        margin: 20px;
+        border: 1px beige;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: #333;
+    }
+    #skills {
+        max-width: 2100px;
+        margin: 20px;
+        border: 1px beige;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: #333;
+    }
+    
+    footer{
+        text-align: center;
+        background-color: rgb(4, 38, 74);
+        margin: 40px;
+    }
