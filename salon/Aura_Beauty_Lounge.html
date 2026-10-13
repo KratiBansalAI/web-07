@@ -111,35 +111,35 @@
     </div>
   </section>
 
- <div class="booking-card">
+ <div id="booking-card">
 
-            <h3>Book an Appointment</h3>
+    <h3>Book an Appointment</h3>
 
-           <form onsubmit="window.location.href='success.html';">
+      <form action="success.html">
 
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name"
-                           placeholder="Enter your name" required>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+             <input type="text" id="name"
+                  placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+           <label for="phone">Phone Number</label>
+               <input type="tel" id="phone"
+                  placeholder="Enter your phone number"
+                  pattern="[0-9]{10}" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone"
-                           placeholder="Enter your phone number"
-                           pattern="[0-9]{10}" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="service">Select a Service</label>
-                    <select id="service" required>
-                        <option value="">Choose a service</option>
-                        <option>Hair</option>
-                        <option>Skin & Facials</option>
-                        <option>Nails</option>
-                        <option>Makeup</option>
-                    </select>
-                </div>
+        <div class="form-group">
+           <label for="service">Select a Service</label>
+              <select id="service" required>
+                <option value="">Choose a service</option>
+                 <option>Hair</option>
+                 <option>Skin & Facials</option>
+                 <option>Nails</option>
+                 <option>Makeup</option>
+              </select>
+        </div>
 
                 <div class="form-group">
                     <label for="date">Preferred Date</label>
@@ -159,10 +159,10 @@
 
         <div class="contact-details">
             <h3>Prefer to talk to us?</h3>
-            <p>📞 Call us: +91 821xxxx865</p>
-            <p>🕒 Add your salon's opening hours</p>
+            <p>📞 Call us: +91 8218441865</p>
+            <p>🕒 Monday - Saturday: 10 AM - 8 PM</p>
+            <p>🕒 Sunday: 11 AM - 6 PM</p>
         </div>
-
     </div>
 </section>
 
