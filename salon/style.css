@@ -4,15 +4,9 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px; 
-}
-
 body {
-  font-family: "Jost", Arial, sans-serif;
-  color: var(--text);
-  background: var(--white);
+  font-family: Arial, sans-serif;
+  background: white;
   line-height: 1.6;
 }
 
@@ -53,8 +47,8 @@ h1, h2, h3, .logo, .footer-logo {
 .section-head h2,
 .about-text h2,
 .contact-info h2 {
-  font-size: 2.4rem;
-  color: var(--plum);
+  font-size: 38.4;
+  color: rgb(51, 15, 51);
   margin-bottom: 12px;
 }
 
@@ -83,16 +77,6 @@ h1, h2, h3, .logo, .footer-logo {
   background-color: #ac8891;
 }
 
-.btn-light {
-  border-color: white;
-  color: white;
-}
-
-.btn-light:hover {
-  background: white;
-  color: plum;
-}
-
 .site-header {
     background: rgb(51, 15, 51);
 }
@@ -108,7 +92,7 @@ h1, h2, h3, .logo, .footer-logo {
 .logo {
   font-size: 1.7rem;
   font-weight: 700;
-  color: var(--white);
+  color: whitesmoke;
 }
 
 .logo span {
@@ -120,7 +104,7 @@ h1, h2, h3, .logo, .footer-logo {
   display: flex;
   align-items: center;
   gap: 24px;
-  color: var(--white);
+  color: white;
 }
 
 .nav a:hover {
@@ -128,14 +112,13 @@ h1, h2, h3, .logo, .footer-logo {
 }
 
 .nav .nav-book {
-  background: var(--rose);
+  background: white;
   padding: 8px 18px;
   border-radius: 4px;
 }
 
-.nav .nav-book:hover {
-  background: var(--orchid);
-  color: var(--white);
+.nav-book{
+  color: rgb(51, 15, 51);
 }
 
 .hero {
@@ -163,7 +146,7 @@ h1, h2, h3, .logo, .footer-logo {
 }
 
 .hero p {
-  font-size: 1.15rem;
+  font-size: 18.4px;
   max-width: 460px;
   margin-bottom: 30px;
 }
@@ -178,7 +161,7 @@ h1, h2, h3, .logo, .footer-logo {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 400px;
   gap: 50px;
   align-items: center;
 }
@@ -188,12 +171,11 @@ h1, h2, h3, .logo, .footer-logo {
   height: 460px;
   object-fit: cover;
   border-radius: 6px;
-  background: var(--blush);
+  background: white;
 }
 
 .about-text p {
   margin-bottom: 14px;
-  color: var(--muted);
 }
 
 .about-points {
@@ -213,7 +195,7 @@ h1, h2, h3, .logo, .footer-logo {
 }
 
 .card {
-  background: var(--white);
+  background: whitesmoke;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #efd9df;
@@ -231,25 +213,25 @@ h1, h2, h3, .logo, .footer-logo {
 }
 
 .card h3 {
-  font-size: 1.6rem;
-  color: var(--plum);
+  font-size: 25.6px;
+  color: rgb(16, 16, 16);
   margin-bottom: 6px;
 }
 
 .card-body p {
-  font-size: 0.95rem;
-  color: var(--muted);
+  font-size: 15.2px;
+  color: black;
 }
 
 .card-body .price {
   margin-top: 12px;
   font-weight: 500;
-  color: var(--orchid);
+  color: black;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 200px);
   gap: 14px;
 }
 
@@ -258,31 +240,9 @@ h1, h2, h3, .logo, .footer-logo {
   height: 280px;
   object-fit: cover;
   border-radius: 6px;
-  background: var(--blush);
+  background: #ead3da;
 }
 
-.reviews {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.review {
-  background: var(--white);
-  padding: 26px;
-  border-left: 4px solid var(--rose);
-  border-radius: 4px;
-}
-
-.review p {
-  margin-bottom: 14px;
-}
-
-.review cite {
-  font-style: normal;
-  font-weight: 500;
-  color: orchid;
-}
 
 #contact {
   text-align: center;
@@ -310,6 +270,94 @@ h1, h2, h3, .logo, .footer-logo {
   margin-bottom: 4px;
 }
 
+
+.booking-card {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #f4d5dd;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(51, 15, 51, 0.10);
+    text-align: left;
+}
+
+.booking-card h3 {
+    color: rgb(51, 15, 51);
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #443344;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ead3da;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ac8891;
+    box-shadow: 0 0 0 3px rgba(172, 136, 145, 0.15);
+}
+
+.booking-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(51, 15, 51);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.booking-btn:hover {
+    background-color: #ac8891;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    color: #8a7780;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.contact-details {
+    margin: 35px;
+    color: #443344;
+}
+
+.contact-details h3 {
+    color: rgb(51, 15, 51);
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+}
+
 @media (max-width: 1000px) {
   .header-inner {
     flex-direction: column;
@@ -329,7 +377,7 @@ h1, h2, h3, .logo, .footer-logo {
 
   .about-grid,
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 360px;
     gap: 30px;
   }
 
@@ -340,6 +388,7 @@ h1, h2, h3, .logo, .footer-logo {
   .section-head h2,
   .about-text h2,
   .contact-info h2 {
-    font-size: 2rem;
+    font-size: 15.2px;
   }
 }
+

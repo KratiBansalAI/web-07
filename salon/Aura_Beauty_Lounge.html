@@ -16,8 +16,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact" class="nav-book">Book now</a>
+        <a href="#booking-card" class="nav-book">Book now</a>
       </nav>
     </div>
   </header>
@@ -27,7 +26,7 @@
       <h1>Walk in tired. Walk out glowing.</h1>
       <p>Haircuts, facials, nails and makeup in a calm, friendly space made for you.</p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Book an appointment</a>
+        <a href="#booking-card" class="btn btn-primary">Book an appointment</a>
       </div>
     </div>
   </section>
@@ -106,19 +105,66 @@
 
       <div class="gallery">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3gZqePXEbOjYfY3aPo3_S22rO5YDZ3Pgox-cb6XKoPl2NEaI3I8CrRsx&s=10" alt="Soft wavy hairstyle">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFV0QFwVUMdDx0c7kZXz2KzKEiwOfcN9ahj_UIJCNmo0OdoIUhkOCafrQQ&s=10" alt="Bridal makeup look">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAL4l6mFfYHvsPl66mkgsGowpMTX4zw4uyg_fFqUZBqg&s=10" alt="Bridal makeup look">
         <img src="https://www.wella.com/sites/default/files/blog/2024-06/Wella-Magazine-top-10-coloring-tips-your-best-hair-color-results-Big-image.jpg" alt="Hair colour result">
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="contact-info">
-        <h2 style="text-decoration: underline;">Book your visit</h2>
-        <p id="tag">RESERVE YOUR MOMENT</p>
-        <p>Call: +91 821xxxx865</p>
+ <div class="booking-card">
+
+            <h3>Book an Appointment</h3>
+
+           <form onsubmit="window.location.href='success.html';">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone"
+                           placeholder="Enter your phone number"
+                           pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Select a Service</label>
+                    <select id="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Hair</option>
+                        <option>Skin & Facials</option>
+                        <option>Nails</option>
+                        <option>Makeup</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <button type="submit" class="booking-btn">
+                    Request an Appointment →
+                </button>
+
+                <p class="form-note">
+                    We'll contact you to confirm your booking.
+                </p>
+
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <h3>Prefer to talk to us?</h3>
+            <p>📞 Call us: +91 821xxxx865</p>
+            <p>🕒 Add your salon's opening hours</p>
+        </div>
+
     </div>
-  </section>
+</section>
 
   <footer class="site-footer">
       <p class="footer-logo">Aura Beauty Lounge</p>
